@@ -17,13 +17,26 @@ console.log(productNames);
       <header className="App-header">
         <p>I am a React Person</p>
         <Counter></Counter>
+        <Users></Users>
         <Product product={products[0]}></Product>
         <Person name="Munna" job="football"></Person>
         <Person name="Masum" job="cricket"></Person>
       </header>
     </div>
-  );
+ );
 }
+function Users(){
+  const [users, setUsers] = useState([])
+  useEffect(()) =>{
+    fetch()
+  }
+  return(
+    <div>
+      <h3>Dynamic Users</h3>
+    </div>
+  )
+}
+
 function Product(props){
   const productStyle={
     border: '1px solid gray',
